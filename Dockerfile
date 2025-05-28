@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
 # Cài đặt pip dependencies
 RUN pip install --upgrade pip
 # Cài đặt các thư viện từ requirements.txt
-RUN pip install requirements.txt
+RUN pip install -r requirements.txt
 
 # Nếu bạn có file requirements.txt, thì thay dòng trên bằng:
 # COPY requirements.txt .
