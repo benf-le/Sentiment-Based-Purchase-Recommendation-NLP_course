@@ -1,5 +1,5 @@
 # Sử dụng Python base image
-FROM python:3.11-slim
+FROM python:3.11
 
 # Set working directory
 WORKDIR /app
@@ -7,17 +7,6 @@ WORKDIR /app
 # Copy tất cả file vào Docker image
 COPY . /app
 
-# Cài đặt các dependencies cơ bản
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    git \
-    curl \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    ffmpeg \
-    && rm -rf /var/lib/apt/lists/*
 
 # Cài đặt pip dependencies
 RUN pip install --upgrade pip
