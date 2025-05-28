@@ -22,14 +22,6 @@ RUN apt-get update && apt-get install -y \
 # Cài đặt pip dependencies
 RUN pip install --upgrade pip
 
-# Copy riêng requirements.txt nếu có (tối ưu docker caching), nếu không thì cài trực tiếp
-RUN pip install streamlit pandas numpy torch torchvision \
-    transformers \
-    scikit-learn \
-    tensorflow keras \
-    pyvi \
-    pillow \
-    streamlit-option-menu
 
 # Nếu bạn có file requirements.txt, thì thay dòng trên bằng:
 # COPY requirements.txt .
