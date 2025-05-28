@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+torch
+torchvision
+transformers
+scikit-learn
+tensorflow
+keras
+pyvi
+pillow
+streamlit-option-menu
