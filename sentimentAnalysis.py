@@ -79,7 +79,7 @@ st.markdown(
 
     </style>
     <div class="footer">
-        <p>Website được tạo bởi Lê Cẩm Bằng</p>
+        <p>Website được tạo bởi Lê Cẩm Bằng và Hồ Quốc Khánh</p>
     </div>
     """,
     unsafe_allow_html=True
